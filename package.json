@@ -1,0 +1,33 @@
+{
+  "name": "mern-url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "nodemon app.js",
+    "start": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently  \"npm start\" \"cd client2 && npm run dev\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "nodemon": "^3.0.1",
+    "react-toastify": "^6.0.9",
+    "react-typewriter-effect": "^1.1.0",
+    "shortid": "^2.2.15"
+  }
+}
