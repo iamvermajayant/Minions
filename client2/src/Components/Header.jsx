@@ -17,7 +17,7 @@ const Header = ({ isLoggedIn, logout }) => {
         </Nav>
       ) : (
         <Nav className='ml-auto mr-4 my-4'>
-          <Button variant='primary' onClick={logout}>
+          <Button variant='primary' className='px-4 rounded-pill' onClick={logout}>
             Logout
           </Button>
         </Nav>
