@@ -13,9 +13,10 @@ const Dashboard = ({ user }) => {
   return (
     <>
       <ConnectedHeader />
-      <Container className='center-content my-4'>
-        <legend className='text-center'>
-          Hi, <span className='primary-text'>{user}</span>
+      <Container className='d-flex flex-column align-items-center justify-content-center' style={{height : '90vh'}}>
+        <legend className='text-center mb-5 text-white '>
+          <span style={{fontSize : '2rem', fontWeight : '700'}}>Hello👋 {" "}</span>
+          <span className='primary-text'>{user}</span>
         </legend>
         <ConnectedShortenUrlCard />
         <ConnectedDashboardTable />
