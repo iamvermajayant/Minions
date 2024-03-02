@@ -62,10 +62,10 @@ const DashboardTable = ({ dashboard, getDashboard, deleteUrl, searchUrl }) => {
           Clear
         </Button>
       </Form>
-      <div className="card border-primary mb-3" style={{ maxWidth: "18rem" }}>
+      <div className="card mb-3" style={{backgroundColor : '#1B2432', borderRadius : '10px'}}>
         {dashboard.urls.map((url) => (
           <div key={url._id}>
-            <div className="card-header">Your URL</div>
+            <div className="card-header text-white" style={{backgroundColor : '#2C2B3C', borderTopRightRadius : '10px', borderTopLeftRadius : '10px'}}>Your URL</div>
             <div className="card-body">
               <div className="d-flex flex-row justify-content-between">
                 <h5 className="card-title">
@@ -86,11 +86,11 @@ const DashboardTable = ({ dashboard, getDashboard, deleteUrl, searchUrl }) => {
                   );
                   toast.success("Copied");
                 }}
-                className="btn btn-sm btn-primary"
+                className="btn btn-sm btn-primary px-4 rounded-pill"
               >
                 Copy
               </button>
-              <button onClick={() => deleteUrl(url._id)} className="btn btn-sm btn-danger mx-2">Delete</button>
+              <button onClick={() => deleteUrl(url._id)} className="btn btn-sm btn-danger mx-2 px-4 rounded-pill">Delete</button>
             </div>
           </div>
         ))}
