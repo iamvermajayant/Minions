@@ -7,6 +7,7 @@ import ConnectedHeader from '../Components/Header';
 import ConnectedShortenUrlCard from '../Components/ShortenUrlCard';
 
 import Typewriter from "../Components/Typewriter";
+import Footer from "../Components/Footer";
 
 const Landing = () => {
   const rowDivStyle = {
@@ -53,6 +54,7 @@ const Landing = () => {
             <Cardscomponent />
           </Col>
       </Row>
+      <Footer/>
     </>
   );
 };
