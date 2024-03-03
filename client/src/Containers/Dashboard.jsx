@@ -8,6 +8,8 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import ConnectedHeader from '../Components/Header';
 import ConnectedShortenUrlCard from '../Components/ShortenUrlCard';
 import ConnectedDashboardTable from '../Components/DashboardTable';
+import Footer from '../Components/Footer';
+
 
 const Dashboard = ({ user }) => {
   return (
@@ -21,6 +23,7 @@ const Dashboard = ({ user }) => {
         <ConnectedShortenUrlCard />
         <ConnectedDashboardTable />
       </Container>
+      <Footer/>
     </>
   );
 };
