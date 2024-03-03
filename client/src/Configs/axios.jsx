@@ -22,7 +22,7 @@
 
 import axios from 'axios';
 
-const baseURL = import.meta.env.MODE === 'development'
+const baseURL = import.meta.env.MODE === 'production'
   ? 'https://minions-hitp.onrender.com/'
   : 'http://localhost:5000';
 
