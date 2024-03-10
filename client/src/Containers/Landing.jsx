@@ -49,7 +49,7 @@ const Landing = () => {
         </Col>
       </Row>
       <Row className="d-flex justify-content-center align-items-center my-5 mx-5" >
-          <Col className="d-flex flex-xl-row flex-column justify-content-center align-items-center mx-4" md={10}>
+          <Col className="d-flex flex-xl-row flex-column justify-content-center align-items-center mx-4" md={12}>
             <Cardscomponent />
           </Col>
       </Row>
