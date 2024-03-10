@@ -1,0 +1,37 @@
+/* Add your custom styles here */
+
+.accordion {
+  width: 60%;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.accordion-content {
+  padding: 10px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  height: 50px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 90px; /* Adjust this value based on your content height */
+}
+
+.accordion-header {
+  padding: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+  background-color: #e5e5e5;
+}
+
+.accordion-header.active {
+  background-color: #ddd;
+}
