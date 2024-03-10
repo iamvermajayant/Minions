@@ -1,13 +1,12 @@
 
 import { Row, Col, Button } from "react-bootstrap";
-// import Header from "../Components/Header";
-// import ShortenUrlCard from "../Components/ShortenUrlCard";
 import Cardscomponent from "../Components/Cardscomponent";
 import ConnectedHeader from '../Components/Header';
 import ConnectedShortenUrlCard from '../Components/ShortenUrlCard';
 
 import Typewriter from "../Components/Typewriter";
 import Footer from "../Components/Footer";
+import Accordion from "../Components/Accordion";
 
 const Landing = () => {
   const rowDivStyle = {
@@ -53,6 +52,9 @@ const Landing = () => {
           <Col className="d-flex flex-xl-row flex-column justify-content-center align-items-center mx-4" md={10}>
             <Cardscomponent />
           </Col>
+      </Row>
+      <Row className="d-flex justify-content-center">
+      <Accordion/>
       </Row>
       <Footer/>
     </>
